@@ -1,0 +1,26 @@
+#mainNav {
+  margin-bottom: 15px; }
+
+.subheader, .simpleP, .ulSection {
+  text-align: justify; }
+
+.subheader {
+  font-size: 18px; }
+
+@media (min-width: 700px) {
+  .mainBody h1::before {
+    content: "Pol Lanski"; } }
+@media (max-width: 699px) {
+  .mainBody h1::before {
+    content: "Lanski"; } }
+
+.ulSection {
+  margin-top: 15px; }
+  .ulSection td {
+    vertical-align: top; }
+  .ulSection td.fitwidth {
+    width: auto;
+    white-space: nowrap;
+    padding-right: 10px; }
+
+/*# sourceMappingURL=styles.css.map */

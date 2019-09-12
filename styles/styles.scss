@@ -1,0 +1,45 @@
+#mainNav {
+  margin-bottom:15px;
+}
+
+$name: "Pol Lanski";
+$nickname: "Lanski";
+
+%mainParagraphs {
+  text-align: justify;
+}
+
+.subheader {
+  @extend %mainParagraphs;
+  font-size: 18px;
+}
+
+.simpleP {
+  @extend %mainParagraphs;
+}
+
+.mainBody{
+  @media (min-width: 700px) {
+    h1::before {
+      content: $name;
+    }
+  }
+  @media (max-width: 699px) {
+    h1::before {
+      content: $nickname;
+    }
+  }
+}
+
+.ulSection {
+  margin-top: 15px;
+  @extend %mainParagraphs;
+  td {
+    vertical-align: top;
+  }
+  td.fitwidth {
+    width: auto;
+    white-space: nowrap;
+    padding-right: 10px;
+  }
+}

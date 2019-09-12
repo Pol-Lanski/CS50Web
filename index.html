@@ -3,10 +3,10 @@
     <head>
         <title>Pol Lanski</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="styles/styles.css" type="text/css">
     </head>
     <body>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainNav">
         <a class="navbar-brand" href="#">
           <img src="assets/imgs/LN.svg" width="30" height="30" class="d-inline-block align-top" alt="">
            Lanski
@@ -18,27 +18,24 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Financial Independence</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Users/Lanski/Documents/GitHub/CS50Web/project0/Ultralearning.html">Ultralearning</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
+            <li id="parentDropdown" class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-target="#parentDropdown" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Ultralearning
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="Ultralearning.html">Ultralearning</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="ultralearning/metalearning.html">1. Metalearning</a>
+                <a class="dropdown-item" href="ultralearning/focus.html">2. Focus</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Financial Independence</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Sustainable Tourism</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -53,11 +50,36 @@
           <div class="col-1">
           </div>
           <div class="col-10">
-            This is going to be the main part of the text
+              <img src="assets/imgs/Foto.png" class="rounded float-left container col-lg-3 col-sm-5" id="mainPic" alt="Profile pic" >
+            <div class="mainBody">
+              <h1></h1>
+              <p class="subheader">Pol Lanski is a serial learner and aspiring polymath. In this website you will find several personal projects like information on his <a href="ultralearning.html">Ultralearning</a> quest, his path to Financial Independence and his work on Sustainable Tourism.</p>
+              <p class="simpleP">Some parts of this website are in development because this is part of an ultralearning project too! Feel free to come back soon for other parts to be complete! At the moment there's only the Ultralearning section in progress and still to be developed we have Financial Independence and Sustainable Tourism.</p>
+            </div>
           </div>
-          <div =class"col-1">
+          </div>
+          <div=class"col-1">
           </div>
         </div>
+        <!-- <div class="row" id="mainPageForm">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <form class="contactForm" action="index.html" method="post">
+              <div class="formItem">
+                Name
+                <input type="text" name="Name" value="" placeholder="Name">
+              </div>
+              <div class="formItem">
+                Email
+                <input type="email" name="Email" value="" placeholder="e-mail">
+              </div>
+            </form>
+          </div>
+          <div class="col-2"></div>
+        </div> -->
       </div>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
 </html>
